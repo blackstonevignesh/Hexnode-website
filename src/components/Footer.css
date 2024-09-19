@@ -1,0 +1,103 @@
+.footer {
+  background-color: #2e3e50;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left ul li {
+  margin: 0 15px;
+}
+
+.right p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.left ul li a, .right p {
+  color: white;
+  text-decoration: none;
+}
+
+.left ul li a:hover {
+  color: #00b5ad;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet view (1024px and below) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 10px; /* Reduce padding for tablet view */
+  }
+
+  .left ul {
+    flex-wrap: wrap; /* Allow wrapping for nav items */
+  }
+
+  .left ul li {
+    margin: 0 10px; /* Reduce margin for nav items */
+  }
+
+  .right p {
+    font-size: 0.9rem; /* Slightly reduce text size for better fit */
+  }
+}
+
+/* Mobile view (768px and below) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+  }
+
+  .left ul {
+    justify-content: center; /* Center-align navigation */
+    margin-bottom: 15px; /* Add margin below nav */
+  }
+
+  .left ul li {
+    margin: 10px; /* Adjust margin for better spacing */
+  }
+
+  .right p {
+    font-size: 0.9rem;
+    margin-top: 10px; /* Add space between nav and text */
+  }
+}
+
+/* Small mobile view (480px and below) */
+@media (max-width: 480px) {
+  .left ul li {
+    margin: 5px; /* Reduce margin for smaller screens */
+  }
+
+  .right p {
+    font-size: 0.8rem; /* Reduce font size for small screens */
+  }
+
+  .left ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center-align nav items */
+  }
+}

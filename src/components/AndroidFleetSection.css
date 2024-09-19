@@ -1,0 +1,142 @@
+.android-fleet-section {
+    padding: 50px 100px;
+    background-color: #f8f8f8; /* Light gray background */
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .text-content .main-content h3 {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .text-content .main-content p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .text-content .sub-content h4 {
+    font-size: 1rem;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  /* Responsive Adjustments */
+
+/* Tablet view (1024px and below) */
+@media (max-width: 1024px) {
+  .android-fleet-section {
+    padding: 40px 50px; /* Reduce padding for tablets */
+  }
+
+  .content-container {
+    flex-direction: column; /* Stack content vertically on tablets */
+    align-items: center;
+  }
+
+  .text-content {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem; /* Adjust header font size for tablets */
+  }
+
+  .text-content .main-content h3 {
+    font-size: 1.3rem; /* Adjust font size for headers */
+  }
+
+  .text-content .main-content p {
+    font-size: 0.95rem; /* Adjust paragraph font size */
+  }
+}
+
+/* Mobile view (768px and below) */
+@media (max-width: 768px) {
+  .android-fleet-section {
+    padding: 30px 20px; /* Further reduce padding for mobile */
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem; /* Reduce header font size for mobile */
+  }
+
+  .text-content .main-content h3 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  .text-content .main-content p {
+    font-size: 0.9rem; /* Reduce paragraph font size */
+  }
+
+  .content-container {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+  }
+
+  .image-container,
+  .text-content {
+    max-width: 100%; /* Ensure full-width layout on mobile */
+  }
+}
+
+/* Small mobile view (600px and below) */
+@media (max-width: 600px) {
+  .android-fleet-section {
+    padding: 20px 10px; /* Further reduce padding for small mobile */
+  }
+
+  .section-header h2 {
+    font-size: 1.4rem; /* Smaller header font size */
+  }
+
+  .text-content .main-content h3 {
+    font-size: 1.1rem; /* Reduce heading size */
+  }
+
+  .text-content .main-content p {
+    font-size: 0.85rem; /* Further reduce paragraph font size */
+  }
+
+  .text-content .sub-content h4 {
+    font-size: 0.9rem; /* Adjust sub-content heading size */
+  }
+}
+
+  

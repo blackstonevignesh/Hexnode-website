@@ -1,0 +1,134 @@
+/* New Section Styling */
+.new-section {
+    background-color: #2e3e50; /* Set the background color */
+    color: white; /* Set text color to white */
+    padding: 50px 100px; /* Adjust padding for spacing */
+  }
+  
+  /* Align the text and images side by side */
+  .new-section-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Space out the text and image content */
+  }
+  
+  /* Styling for the text area */
+  .new-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Reduce margin-bottom to tighten spacing between lines */
+    color: white; /* Set header color to white */
+    text-align: left; /* Ensure text is aligned to the left */
+  }
+  
+  /* Container for the images, ensuring they sit next to each other */
+  .image-container {
+    display: flex;
+    justify-content: flex-start; /* Align the images on the left */
+    align-items: center; /* Vertically align images in the center */
+    gap: 50px; /* Space between the two images */
+  }
+  
+  .image-box {
+    text-align: center; /* Center-align each image and its content */
+  }
+  
+  .image-box img {
+    max-width: 150px; /* Set max-width for images */
+    height: auto; /* Keep the aspect ratio */
+    margin-bottom: 10px; /* Add space between image and the text */
+  }
+  
+  /* Specific sizes for Gartner and Forrester images */
+ .gartner-image {
+  max-width: 100px; /* Smaller width for Gartner image */
+  }
+
+ .forrester-image {
+  max-width: 100px; /* Smaller width for Forrester image */
+  } 
+  .image-box p {
+    color: white; /* Set paragraph text to white */
+    font-size: 1rem; /* Adjust font size for readability */
+  }
+  
+
+  /* Responsive Design Adjustments */
+
+/* For tablet screens (1024px and below) */
+@media (max-width: 1024px) {
+  .new-section {
+    padding: 40px 50px; /* Adjust padding for tablets */
+  }
+
+  .new-section h2 {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .new-section-content {
+    flex-direction: column; /* Stack text and images vertically */
+    align-items: center; /* Center-align for better appearance on smaller screens */
+  }
+
+  .image-container {
+    justify-content: center; /* Center the images on tablets */
+    gap: 30px; /* Reduce gap between images */
+  }
+
+  .image-box img {
+    max-width: 120px; /* Reduce the image size for better fit */
+  }
+
+  .gartner-image,
+  .forrester-image {
+    max-width: 90px; /* Slightly reduce Gartner and Forrester image sizes */
+  }
+}
+
+/* For mobile screens (768px and below) */
+@media (max-width: 768px) {
+  .new-section {
+    padding: 30px 20px; /* Further reduce padding for mobile */
+  }
+
+  .new-section h2 {
+    font-size: 1.5rem; /* Adjust header size for mobile */
+  }
+
+  .image-container {
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px; /* Reduce the gap between images */
+  }
+
+  .image-box img {
+    max-width: 100px; /* Further reduce image size on mobile */
+  }
+
+  .gartner-image,
+  .forrester-image {
+    max-width: 80px; /* Further reduce Gartner and Forrester images */
+  }
+}
+
+/* For small mobile screens (600px and below) */
+@media (max-width: 600px) {
+  .new-section {
+    padding: 20px 10px; /* Reduce padding for very small screens */
+  }
+
+  .new-section h2 {
+    font-size: 1.2rem; /* Smaller font size for headers on small screens */
+  }
+
+  .image-box img {
+    max-width: 80px; /* Smallest size for images */
+  }
+
+  .gartner-image,
+  .forrester-image {
+    max-width: 70px; /* Reduce Gartner and Forrester images further */
+  }
+
+  .image-box p {
+    font-size: 0.9rem; /* Reduce paragraph font size for mobile */
+  }
+}

@@ -1,0 +1,105 @@
+/* Centered Section Styling */
+.centered-section {
+    background-color: white; /* Full background white */
+    padding: 50px 100px; /* Adjust padding for section spacing */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+  }
+  
+  .centered-content {
+    text-align: center; /* Ensure all content is centered */
+    max-width: 800px; /* Restrict width for better readability */
+    margin: 0 auto; /* Auto margin for perfect centering */
+  }
+  
+  .centered-image {
+    max-width: 600px; /* Restrict image size */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and header */
+  }
+  
+  .section-header {
+    font-size: 2rem;
+    color: black; /* Set header color */
+    margin-bottom: 15px; /* Space between header and paragraph */
+  }
+  
+  .section-paragraph {
+    font-size: 1rem;
+    color: #555; /* A softer black for paragraph text */
+    line-height: 1.6; /* Enhance readability */
+  }
+
+  /* Responsive Design Adjustments */
+
+/* Tablet view (1024px and below) */
+@media (max-width: 1024px) {
+  .centered-section {
+    padding: 40px 50px; /* Adjust padding for tablet screens */
+  }
+
+  .centered-content {
+    max-width: 700px; /* Reduce max-width on tablets */
+  }
+
+  .section-header {
+    font-size: 1.8rem; /* Reduce header font size */
+  }
+
+  .section-paragraph {
+    font-size: 0.95rem; /* Adjust paragraph font size */
+  }
+
+  .centered-image {
+    max-width: 500px; /* Reduce image size */
+  }
+}
+
+/* Mobile view (768px and below) */
+@media (max-width: 768px) {
+  .centered-section {
+    padding: 30px 20px; /* Reduce padding for mobile */
+  }
+
+  .centered-content {
+    max-width: 90%; /* Use percentage-based width for better fluidity */
+  }
+
+  .section-header {
+    font-size: 1.5rem; /* Further reduce header font size */
+  }
+
+  .section-paragraph {
+    font-size: 0.9rem; /* Adjust paragraph font size for mobile */
+  }
+
+  .centered-image {
+    max-width: 400px; /* Reduce image size for mobile */
+  }
+}
+
+/* Small mobile view (600px and below) */
+@media (max-width: 600px) {
+  .centered-section {
+    padding: 20px 10px; /* Reduce padding for small mobile screens */
+  }
+
+  .centered-content {
+    max-width: 100%; /* Full-width for small mobile */
+  }
+
+  .section-header {
+    font-size: 1.2rem; /* Further reduce header font size */
+  }
+
+  .section-paragraph {
+    font-size: 0.85rem; /* Smaller font size for paragraph */
+  }
+
+  .centered-image {
+    max-width: 300px; /* Further reduce image size */
+  }
+}
+  

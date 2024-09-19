@@ -1,0 +1,102 @@
+.start-managing-section {
+    background-color: #000; /* Black background */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .start-managing-section h2 {
+    color: #fff; /* White text */
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .input-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-container input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    width: 300px;
+    margin-right: 10px; 
+  }
+  
+  .get-started-btn {
+    padding: 15px 30px;
+    background-color: #ff3b56; /* Red background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #e3324a; /* Slightly darker red on hover */
+  }
+  
+  .subtext {
+    color: #aaa; /* Gray color for subtext */
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  
+  .subtext a {
+    color: #ff3b56; /* Red for the 'Request a demo' link */
+    text-decoration: none;
+  }
+  
+  .subtext a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Adjustments */
+
+/* Tablet view (1024px and below) */
+@media (max-width: 1024px) {
+  .input-container input {
+    width: 250px; /* Adjust input width for tablets */
+  }
+}
+
+/* Mobile view (768px and below) */
+@media (max-width: 768px) {
+  .input-container {
+    flex-direction: column; /* Stack input and button vertically */
+  }
+
+  .input-container input {
+    width: 100%; /* Make input full-width on mobile */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .get-started-btn {
+    width: 100%; /* Make button full-width */
+    padding: 15px; /* Adjust padding */
+  }
+}
+
+/* Small mobile view (480px and below) */
+@media (max-width: 480px) {
+  .start-managing-section h2 {
+    font-size: 1.5rem; /* Adjust header size for small screens */
+  }
+
+  .input-container input {
+    padding: 12px 15px; /* Reduce padding for smaller screens */
+  }
+
+  .get-started-btn {
+    padding: 12px 15px; /* Adjust padding for small mobile */
+  }
+
+  .subtext {
+    font-size: 0.8rem; /* Reduce font size for subtext */
+  }
+}
+  

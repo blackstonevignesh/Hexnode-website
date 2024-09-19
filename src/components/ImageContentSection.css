@@ -1,0 +1,146 @@
+.section-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.image-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.image-wrapper img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+}
+
+.arrow-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.arrow-button {
+  background-color: #e0e0e0; /* Light gray for the button background */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+  background-color: #c0c0c0; /* Slightly darker gray on hover */
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.below-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.below-section h3 {
+  margin-bottom: 10px;
+}
+
+.below-section p {
+  color: #555;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet view (1024px and below) */
+@media (max-width: 1024px) {
+  .image-wrapper img {
+    width: 250px; /* Smaller image size for tablets */
+    margin-right: 15px;
+  }
+
+  .content-wrapper {
+    margin-top: 15px; /* Adjust margin for smaller devices */
+  }
+
+  .arrow-button {
+    width: 35px; /* Smaller arrow button size */
+    height: 35px;
+  }
+
+  .arrow-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Mobile view (768px and below) */
+@media (max-width: 768px) {
+  .image-content-wrapper {
+    flex-direction: column; /* Stack the image and content vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .image-wrapper img {
+    width: 200px; /* Smaller image for mobile */
+    margin-right: 0; /* Remove margin on mobile */
+    margin-bottom: 15px; /* Add space below the image */
+  }
+
+  .content-wrapper {
+    margin-top: 0;
+  }
+
+  .arrow-button {
+    width: 30px; /* Smaller arrow button size */
+    height: 30px;
+  }
+
+  .arrow-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .below-section h3 {
+    font-size: 1.5rem; /* Adjust heading size for mobile */
+  }
+
+  .below-section p {
+    font-size: 0.9rem; /* Adjust paragraph size for mobile */
+  }
+}
+
+/* Small mobile view (600px and below) */
+@media (max-width: 600px) {
+  .image-wrapper img {
+    width: 150px; /* Further reduce image size for small mobile */
+  }
+
+  .arrow-button {
+    width: 25px; /* Even smaller arrow button size */
+    height: 25px;
+  }
+
+  .arrow-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .below-section h3 {
+    font-size: 1.2rem; /* Smaller heading size */
+  }
+
+  .below-section p {
+    font-size: 0.85rem; /* Smaller paragraph size */
+  }
+}

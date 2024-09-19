@@ -1,0 +1,197 @@
+.header {
+  background-color: black;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ensure the header takes full width */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure items align to the center */
+  flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+/* Left side (logo and menu) styling */
+.left-side {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allows the items to wrap if space is tight */
+}
+
+.left-side ul {
+  display: flex;
+  margin-left: 20px;
+  flex-wrap: wrap; /* Wrap the menu items for smaller screens */
+}
+
+.left-side ul li {
+  margin-left: 20px;
+  list-style: none; /* Remove default list styles */
+}
+
+.left-side ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.left-side ul li a:hover {
+  color: #ddd;
+}
+
+/* Right side (extra links and phone number) styling */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.extra-links {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.extra-links li {
+  margin-left: 20px;
+}
+
+.extra-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.phone-number {
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Trial button styling */
+.trial-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.trial-button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Hover effect for the header */
+.header:hover {
+  background-color: white;
+}
+
+.header:hover .left-side ul li a,
+.header:hover .extra-links li a,
+.header:hover .phone-number {
+  color: black;
+}
+
+.header:hover .trial-button {
+  background-color: red;
+  color: white;
+}
+
+/* Logo styling */
+.logo {
+  max-height: 50px;
+  margin-right: 20px;
+}
+
+/* Remove bullets from list items */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the header responsive */
+@media (max-width: 1024px) {
+  .header nav {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .left-side {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .left-side ul {
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%;
+    margin-left: 0; /* Remove extra margin */
+  }
+
+  .left-side ul li {
+    margin: 10px 0; /* Add margin to separate menu items */
+  }
+
+  .right-side {
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .trial-button {
+    margin-left: 0; /* Remove margin on smaller screens */
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust font size for smaller devices */
+  .left-side ul li a,
+  .extra-links li a,
+  .phone-number {
+    font-size: 0.85rem; /* Reduce the font size */
+  }
+
+  .trial-button {
+    padding: 8px 16px; /* Adjust padding */
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    max-height: 40px; /* Adjust logo size */
+  }
+}
+
+@media (max-width: 600px) {
+  .header nav {
+    padding: 10px;
+  }
+
+  .left-side ul {
+    align-items: center;
+  }
+
+  .trial-button {
+    width: 100%; /* Make the trial button full-width */
+  }
+
+  .extra-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .extra-links li {
+    margin: 5px 0; /* Reduce spacing for smaller screens */
+  }
+
+  .phone-number {
+    font-size: 0.8rem; /* Reduce font size */
+  }
+}

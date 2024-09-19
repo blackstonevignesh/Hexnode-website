@@ -1,0 +1,145 @@
+/* Section Styling */
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  background-color: black; /* Change background to black */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.section .text-content {
+  max-width: 50%;
+  color: white; /* Set text color to white */
+}
+
+.section h1 {
+  font-size: 2.5rem;
+  color: white; /* Set header color to white */
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: white; /* Set paragraph color to white */
+}
+
+.section-buttons {
+  margin-top: 20px;
+}
+
+.section-buttons input {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.section-buttons input.email-input {
+  background-color: white; /* Email input stays white */
+  color: black; /* Text color inside email input remains black */
+  border: 1px solid #ddd;
+}
+
+.section-buttons input.get-started-button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.section-buttons input.get-started-button:hover {
+  background-color: darkred;
+}
+
+/* Device management image to the right */
+.section img.work-app-image {
+  max-width: 15%; /* Reduce the size of the work app image */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 40px;
+  border-radius: 10px;
+}
+
+/* Responsive Design Adjustments */
+
+/* For tablet screens (1024px and below) */
+@media (max-width: 1024px) {
+  .section {
+    padding: 30px 50px;
+    flex-direction: column; /* Stack the elements vertically */
+    text-align: center; /* Center-align the text for better readability */
+  }
+
+  .section .text-content {
+    max-width: 100%; /* Text content takes full width */
+    margin-bottom: 30px; /* Add spacing between the text and image */
+  }
+
+  .section img.work-app-image {
+    max-width: 30%; /* Increase image size slightly on tablets */
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  .section h1 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .section-buttons input {
+    width: 100%; /* Make buttons full width */
+    margin-bottom: 10px; /* Add space between stacked buttons */
+  }
+
+  .section-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For mobile screens (768px and below) */
+@media (max-width: 768px) {
+  .section {
+    padding: 20px 30px;
+  }
+
+  .section h1 {
+    font-size: 1.8rem; /* Further adjust heading size for smaller screens */
+  }
+
+  .section p {
+    font-size: 1rem; /* Reduce paragraph font size for readability */
+  }
+
+  .section img.work-app-image {
+    max-width: 40%; /* Increase image size for mobile */
+  }
+
+  .section-buttons input {
+    padding: 8px 16px; /* Adjust padding for smaller buttons */
+    font-size: 0.9rem;
+  }
+}
+
+/* For small mobile screens (600px and below) */
+@media (max-width: 600px) {
+  .section {
+    padding: 10px 20px;
+  }
+
+  .section h1 {
+    font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .section p {
+    font-size: 0.9rem; /* Smaller paragraph size */
+  }
+
+  .section img.work-app-image {
+    max-width: 50%; /* Increase the image size for better visibility */
+  }
+
+  .section-buttons input {
+    font-size: 0.8rem;
+    padding: 6px 12px; /* Reduce padding on smaller screens */
+  }
+}

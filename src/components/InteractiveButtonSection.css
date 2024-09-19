@@ -1,0 +1,138 @@
+.interactive-section {
+  padding: 50px 100px;
+  background-color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.interactive-button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: white;
+  border: 1px solid #ddd;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.interactive-button.active {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content-left {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.content-left h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.content-left p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.content-right {
+  flex: 1;
+}
+
+.content-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Design Adjustments */
+
+/* Tablet view (1024px and below) */
+@media (max-width: 1024px) {
+  .interactive-section {
+    padding: 40px 50px; /* Reduce padding for tablets */
+  }
+
+  .content-container {
+    flex-direction: column; /* Stack content vertically on tablets */
+    align-items: center;
+  }
+
+  .content-left {
+    padding-right: 0;
+    margin-bottom: 20px; /* Add margin to separate stacked content */
+  }
+
+  .content-left h2 {
+    font-size: 1.8rem; /* Reduce header font size */
+  }
+
+  .content-left p {
+    font-size: 0.95rem; /* Adjust paragraph font size */
+  }
+
+  .button-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile view (768px and below) */
+@media (max-width: 768px) {
+  .interactive-section {
+    padding: 30px 20px; /* Reduce padding for mobile */
+  }
+
+  .content-left h2 {
+    font-size: 1.5rem; /* Further reduce header font size */
+  }
+
+  .content-left p {
+    font-size: 0.9rem; /* Adjust paragraph font size for mobile */
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interactive-button {
+    width: 100%; /* Make buttons full-width on mobile */
+    margin-bottom: 10px;
+  }
+}
+
+/* Small mobile view (600px and below) */
+@media (max-width: 600px) {
+  .interactive-section {
+    padding: 20px 10px; /* Reduce padding further for small screens */
+  }
+
+  .content-left h2 {
+    font-size: 1.2rem; /* Reduce header font size for small screens */
+  }
+
+  .content-left p {
+    font-size: 0.85rem; /* Smaller paragraph font size */
+  }
+
+  .interactive-button {
+    font-size: 0.9rem; /* Reduce button font size */
+  }
+
+  .content-right img {
+    max-width: 90%; /* Ensure image scales down on small screens */
+  }
+}
